@@ -1,0 +1,28 @@
+.board {
+  display: grid;
+  background-color: #ffffff;
+  width: fit-content;
+  border: 8px solid #BC6C25; 
+  border-radius: 15px;
+
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+}
+.result-window {
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #283618;
+}
+
+.move-count {
+  font-size: 24px;
+  font-weight: bold;
+  color: #283618;
+}

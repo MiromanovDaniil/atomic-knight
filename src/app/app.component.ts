@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { BoardComponent } from './components/board/board.component';
+import {GameControlsComponent} from './components/game-controls/game-controls.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
+  imports: [BoardComponent, GameControlsComponent],
+  styleUrls: ['./app.component.scss'],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'atomic-knight';
+
 }

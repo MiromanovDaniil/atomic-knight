@@ -1,0 +1,15 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  background: linear-gradient(to bottom right, #FEFAE0, #ebc498); 
+  min-height: 100vh;
+  min-width: 100vh;
+  h1 {
+      font-size: 2.5rem;
+      font-family: 'Times New Roman', serif;
+      margin-bottom: 20px;
+      color: #283618; 
+  }
+}
