@@ -9,12 +9,11 @@ import {NgIf} from "@angular/common";
     [class.first-color-cell]="firstColor"
     [class.second-color-cell]="secondColor">
       <p *ngIf="!hasKnight">{{ moveNumber || '' }}</p>
-      <ng-container *ngIf="hasKnight">
       <img 
-        src="/assets/svg/knight.svg" width="50" height="50" 
-        style="filter: brightness(0) saturate(100%) invert(44%) sepia(94%) saturate(4953%) hue-rotate(95deg) brightness(98%) contrast(105%); pointer-events: none;" 
+       *ngIf="hasKnight"
+        src="/assets/svg/knight.svg"
+        class="cell-image"
        />
-      </ng-container>
     </div>
   `,
   styleUrls: ['./cell.component.scss'],
