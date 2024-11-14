@@ -10,5 +10,8 @@ import {GameControlsComponent} from './components/game-controls/game-controls.co
   templateUrl: './app.component.html',
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 
 }
