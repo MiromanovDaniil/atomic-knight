@@ -28,10 +28,10 @@ export class BoardComponent implements OnInit {
     this.gameService.moveCount$.subscribe(moveCount => {
       this.moveCount = moveCount;
       if (moveCount < 100 && moveCount > 0 && this.possibleMoves.length == 0) {
-        this.result = "Oops... You losed!";
+        this.result = "You losed!";
       }
       if (moveCount == 100) {
-        this.result = "Congratulations, you won!";
+        this.result = "You won!";
       }
     });
     this.gameService.knightPosition$.subscribe(knightPosition => {
