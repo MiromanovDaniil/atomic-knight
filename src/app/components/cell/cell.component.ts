@@ -11,7 +11,7 @@ import {NgIf} from "@angular/common";
       <p *ngIf="!hasKnight">{{ moveNumber || '' }}</p>
       <img 
        *ngIf="hasKnight"
-        src="/assets/svg/knight.svg"
+        src="./assets/svg/knight.svg"
         class="cell-image"
        />
     </div>
